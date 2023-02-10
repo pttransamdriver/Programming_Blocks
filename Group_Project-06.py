@@ -10,32 +10,40 @@ print("Hello and welome to Python Coaster! You will need to meet certain requirm
 print("Please answer the following questions:")
 print("################################################################################################")
 print("")
-# Input the first rider's age
+# Input the first rider's age and hight
 age1 = int(input("What's the first riders age: "))
-
-if age1 >= 12 and age1 <= 18:
-    input("Does the first rider have the infamus 'golden passport'? (Y/N): ").upper()
-
-# Input the first rider's height
 height1 = float(input("Enter the first rider's height in inches: "))
 
-# Input the second rider's age
-age2 = int(input("Enter the second rider's age: "))
+# If the first rider's age is between 12 and 17 and their hight is above 36 inches. Check if they have a golden ticket
+if age1 >= 12 and age1 < 18:
+    golden_pass1 = input("Does the first rider have the infamus 'golden passport'? (Y/N): ").upper()
 
-# If the second riders age is 
-if age2 >= 12 and age2 <=18:
-    input("Does the first rider have the infamus 'golden passport'? (Y/N): ").upper()
+# Ask if there is a second rider:
+rider2 = input("Will there be a second rider? (Y/N): ").upper()
+if rider2 == "Y":
 
-# Input the second rider's height
-height2 = float(input("Enter the second rider's height in inches: "))
+    # Input the second rider's age and hight
+    age2 = int(input("Enter the second rider's age: "))
+    height2 = float(input("Enter the second rider's height in inches: "))
+
+    # If the second rider's age is between 12 and 17 and their hight is above 36 inches. Check if they have a golden ticket
+    if age2 >= 12 and age2 <= 17 and height2 >= 36:
+        golden_pass2 = input("Does the Second rider have the infamus 'golden passport'? (Y/N): ").upper()
+        if golden_pass2 == "Y":
+            print("You two have fun on the ride! ")
+        elif age2 <= 17 or golden_pass2 =="N":
+            print("Sorry, riders don't meet the requirments for this ride")
 
 # Check if the riders meet the requirements to ride
-if height1 >= 36 and height2 >= 36:
-    if age1 >= 18 or age2 >= 18:
-        print("Riders can ride the ride")
-    elif age1 < 18 and age2 < 18:
-        print("Riders cannot ride the ride")
-   # elif gold_pass == "Y" and age1 >= 12 or age2 >= 12:
-    #    print("Riders can ride this ride! ")
+    if height1 >= 36 and height2 >= 36:
+        if age1 >= 18 or age2 >= 18:
+            print("Riders can ride the ride")
+        elif age1 < 18 and age2 < 18:
+            print("Riders cannot ride the ride")
+elif age1 >= 12 and golden_pass1 == "Y":
+    print("Have fun on the ride!")
+elif age1 <= 17 and golden_pass1 == "N":
+    print("Sorry, you don't meet the requirments for this ride :(") 
+
 else:
-    print("Sorry, riders do nott meet the ride qualifications :()")
+    print("Sorry, rider(s) don't meet the ride qualifications :(")
