@@ -40,10 +40,10 @@ if rider2 == "Y":
             print("Riders can ride the ride")
         elif age1 < 18 and age2 < 18:
             print("Riders cannot ride the ride")
-elif age1 >= 12 and golden_pass1 == "Y":
-    print("Have fun on the ride!")
-elif age1 <= 17 and golden_pass1 == "N":
-    print("Sorry, you don't meet the requirments for this ride :(") 
+    elif age1 >= 12 and golden_pass1 == "Y":
+        print("Have fun on the ride!")
+    elif age1 <= 17 and golden_pass1 == "N":
+        print("Sorry, you don't meet the requirments for this ride :(") 
 
 else:
     print("Sorry, rider(s) don't meet the ride qualifications :(")
