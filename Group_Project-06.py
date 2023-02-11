@@ -3,6 +3,7 @@ File: teach06_sample.py
 Author: Tim Illguth
 Professor: Gabriel Haynie
 Purpose: Amusement park ride requirements.
+
 """
 print("")
 print("################################################################################################")
