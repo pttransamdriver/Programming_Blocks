@@ -38,4 +38,5 @@ while True:
     play_again = input("Would you like to play again? (Y/N): ")
     # If the play again veriable is 'Y' the outer loop with its inner loop runs again
     if play_again.upper() != "Y":
+        print("Thanks for playing! ")
         break
