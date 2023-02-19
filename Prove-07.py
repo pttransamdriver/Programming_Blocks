@@ -1,12 +1,12 @@
 import random
 
-# Define a list of secret words
+# Define a list of secret words to use in the game
 WORDS = ["code", "assignment", "while", "loop", "python", "vscode"]
 
 # Choose a random secret word from the list
 secret_word = random.choice(WORDS)
 
-# Create a list to store the user's guesses
+# Define a list to store the user's guesses
 guesses = []
 
 # Print the initial hint with underscores
@@ -29,17 +29,17 @@ while True:
     # Add the guess to the list of guesses
     guesses.append(guess)
 
-    # Check if the guess is correct
+    # Check if the 'guess' is correct
     if guess == secret_word:
         print("Congratulations! You guessed the word in", len(guesses), "tries.")
         break
 
     # Update the hint with correct letters and lowercase letters in the wrong position
-    for i in range(len(secret_word)):
-        if guess[i] == secret_word[i]:
-            hint[i] = secret_word[i].upper()
-        elif guess[i] in secret_word:
-            hint[i] = guess[i]
+    for letter in range(len(secret_word)):
+        if guess[letter] == secret_word[letter]:
+            hint[letter] = secret_word[letter].upper()
+        elif guess[letter] in secret_word:
+            hint[letter] = guess[letter]
 
     # Print the updated hint
     print(" ".join(hint))
