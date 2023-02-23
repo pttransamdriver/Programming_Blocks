@@ -12,14 +12,16 @@ guesses = []
 # Print the initial hint with underscores
 hint = ["_" for letter in secret_word]
 print("Hello player, let's play a python wordle!")
-print("for this game you will need to guess the word")
-print("I will show you the number of letters in the word with '_' representing each letter")
+print("for this game you will need to guess a word.")
+print("I will show you the number of letters in the word with '_' representing each letter.")
+print("A Lowercase letter will be seen if the letters you have gessed are in the word.")
+print("An Uppercase letter will be shown if you guess the correct letter with the correct placment")
 print(" ".join(hint))
 
 # Loop until the user guesses the word
 while True:
     # Ask the user to guess the word
-    guess = input("Not quite, enter another guess: ").lower()
+    guess = input("Enter your guess: ").lower()
 
     # Check if the guess has the same length as the secret word
     if len(guess) != len(secret_word):
