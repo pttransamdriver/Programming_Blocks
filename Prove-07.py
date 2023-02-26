@@ -34,7 +34,7 @@ while True:
     # Check if the 'guess' is correct
     if guess == secret_word:
         print("Congratulations! You Win! You guessed the word in", len(guesses), "tries.")
-        print(f"Here is a list of your guesses: {guesses}")
+        print(f"Here is a list of your valid guesses: {guesses}")
         break
 
     # Update the hint with correct letters and lowercase letters in the wrong position
