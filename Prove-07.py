@@ -34,14 +34,20 @@ while True:
     # Check if the 'guess' is correct
     if guess == secret_word:
         print("Congratulations! You Win! You guessed the word in", len(guesses), "tries.")
+        # Personal Flair: I'd like to see what my guesses were :)
         print(f"Here is a list of your valid guesses: {guesses}")
         break
 
     # Update the hint with correct letters and lowercase letters in the wrong position
     for letter in range(len(secret_word)):
+        # Where 'letter' is the index of the current letter in 'secret_word'
         if guess[letter] == secret_word[letter]:
+            # If the guessed letter is in the correct position,
+            # update the corresponding element in 'hint' to the uppercase letter
             hint[letter] = secret_word[letter].upper()
         elif guess[letter] in secret_word:
+            # If the guessed letter is in the 'secret_word' but not in the correct position,
+            # update the corresponding element in 'hint' to the lowercase letter
             hint[letter] = guess[letter]
 
     # Print the updated hint
