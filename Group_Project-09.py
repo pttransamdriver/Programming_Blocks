@@ -38,6 +38,7 @@ print(f"The Average of the numbers you entered is {(average)}")
 
 # If Else statment for positive and negative numbers
 if positive_numbers:
+    # Defines 'smallest_positive' by taking the 'min()' of the 'positive_numbers' list
     smallest_positive = min(positive_numbers)
     print(f"The smallest positive number is {smallest_positive}")
 else:
