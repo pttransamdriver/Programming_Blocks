@@ -1,3 +1,10 @@
+"""
+File: Group_project-09.py
+Author: Tim Illguth
+Purpose: Practice using listseses
+"""
+
+
 # Create an empty list to store numbers
 numbers = []
 
