@@ -11,7 +11,7 @@ print("What would you like to do?")
 print("Please choose from the following options:")
 
 # Define the 'menu' variable to be a list of the user's choices
-menu = ["1. Add Item\n" "2. View Cart\n" "3. Remove Item\n" "4. Compute Total\n" "5. Quit"]
+menu = ["1. Add Item\n" "2. View Cart\n" "3. Remove Item\n" "4. Compute Total\n" "5. Done/Quit"]
 
 # Define dictionaries (a thing that like a list but indexable) for the cart and associated costs
 cart = {}
@@ -39,7 +39,6 @@ while True:
             # associate the added item with the added cost and place it in the 'cost' list
             cost[item_add] = item_cost
 
-
     
     #Prints out the cart contents
     elif choice == "2":
@@ -64,7 +63,7 @@ while True:
     elif choice == "4":
         # Uses 'values()' to pull the associated numerarical values from the direcotry 
         sub_total = sum(cost.values()) 
-        print(f"Your subtotal so far is: ${sub_total}")
+        print(f"Your subtotal so far is: ${sub_total:.2f}")
     elif choice == "5":
         break
     else:
