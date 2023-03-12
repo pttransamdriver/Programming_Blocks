@@ -83,21 +83,19 @@ while True:
         # Yes, yes this is a copy paste from choice 2. shhh
         for item, quantity in cart.items():
             print(f"{quantity} {item} - ${cost[item]*quantity:.2f}")
-            # Add a flairwell with a moose ACSII 
-            print("Have a moose't wonderful day! :D ") 
-            print(" ___            ___")
-            print("/   \          /   \ ")
-            print("\_   \        /  __/ ")
-            print(" _\   \      /  /__ ")
-            print(" \___  \____/   __/ ")
-            print("     \_       _/ ")
-            print("       | @ @  \_ ")
-            print("       |         ")
-            print("     _/     /\   ")
-            print("    /o)  (o/\ \_ ")
-            print("    \_____/ /    ")
-            print("      \____/     ")
+        print("Have a moose't wonderful day! :D ") 
+        print(" ___            ___")
+        print("/   \          /   \ ")
+        print("\_   \        /  __/ ")
+        print(" _\   \      /  /__ ")
+        print(" \___  \____/   __/ ")
+        print("     \_       _/ ")
+        print("       | @ @  \_ ")
+        print("       |         ")
+        print("     _/     /\   ")
+        print("    /o)  (o/\ \_ ")
+        print("    \_____/ /    ")
+        print("      \____/     ")
         break
     else:
         print("Please make a valid numarical selection")
-
