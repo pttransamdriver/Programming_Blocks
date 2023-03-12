@@ -3,12 +3,15 @@ File: Group_project-09.py
 Author: Tim Illguth
 Purpose: Make syncing lists
 """
-
+# Define Bank accounts and balances variables as lists
 bank_accounts = []
 balances = []
 
+# Print the introduction
 print("Hello user, we are going to try some bank account syncing")
 print("Please enter the different accounts you have and their respective balanaces")
+
+# Start the first while loop that will populate the 'bank_accounts' and 'balances' 
 while True:
     account_name = input("Please enter an account name and 'quit' when done: ").lower()
     if account_name == "quit":
